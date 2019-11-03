@@ -5,7 +5,7 @@ module.exports.hello = (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
+        message: 'Hello!',
       }),
   };
 
@@ -20,7 +20,7 @@ module.exports.imgresize = (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'img resize',
+        message: 'Thank you for using IMG Resize service unfortunatly it is currently unavailable.',
         
       }),
   };
