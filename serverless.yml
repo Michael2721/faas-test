@@ -1,0 +1,19 @@
+service: faas-test
+provider:
+  name: aws
+  runtime: nodejs10.x
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: get
+  imgresize:
+    handler: handler.imgresize
+    events:
+      - http:
+          path: /imgresize
+          method: get
+
+
