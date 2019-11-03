@@ -15,5 +15,12 @@ functions:
       - http:
           path: /imgresize
           method: get
+  id:
+    handler: handler.id
+    events:
+      - http:
+          path: id/{id}
+          method: get
+
 
 
